@@ -12,7 +12,7 @@ import hashlib
 #>>> bandit -r <folder>
 #deprecated md5 will not be found by sonar...
 password="123_x&5s" 
-hash_object = hashlib.md5(b'123_x32&')
+hash_object = hashlib.md5(b'123_x32&') #sha1 256
 
 password = b"bobo"
 

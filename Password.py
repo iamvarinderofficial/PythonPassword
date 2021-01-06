@@ -6,6 +6,7 @@ import hmac
 
 class Password:
     def hash_password(self, password_string):
+        # bcrypt is most scure password hashing alog
         hashed_password = bcrypt.hashpw(password_string, bcrypt.gensalt())
         return hashed_password
 
