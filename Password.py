@@ -17,7 +17,7 @@ class Password:
         # bcrypt is most scure password hashing alog
         hashed_password = bcrypt.hashpw(password_string, bcrypt.gensalt())
 		
-        # hashed_password =hashlib.pbkdf2_hmac('sha512',password_string,salt,iterations,dklen=dklen)
+     
 
         return hashed_password
 
